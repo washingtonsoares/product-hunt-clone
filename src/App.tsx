@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './core/theme';
 import GlobalStyles from './core/theme/GlobalStyles';
 import Routes from './Routes';
+import * as Styled from 'App.styled';
 
 const accessToken = process.env.REACT_APP_ACCESS_TOKEN;
 
@@ -28,7 +29,9 @@ function App() {
     <ApolloProvider client={client}>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Routes />
+        <Styled.MainWrapper>
+          <Routes />
+        </Styled.MainWrapper>
       </ThemeProvider>
     </ApolloProvider>
   );
