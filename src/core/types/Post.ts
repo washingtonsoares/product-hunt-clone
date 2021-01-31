@@ -11,13 +11,26 @@ export interface Thumbnail {
 }
 
 export interface PostNode {
+  cursor: string;
   node: Post;
 }
 
-export interface PostsEdges {
+export interface PageInfo {
+  hasNextPage: boolean;
+  endCursor: string;
+}
+
+export interface PostsData {
   edges: PostNode[];
+  pageInfo: PageInfo;
 }
 
 export interface PostResponse {
-  posts: PostsEdges;
+  posts: PostsData;
+}
+
+export interface PostsVariables {
+  first?: number;
+  order?: string;
+  cursor?: string;
 }

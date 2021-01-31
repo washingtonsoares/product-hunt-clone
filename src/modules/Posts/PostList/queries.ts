@@ -1,9 +1,10 @@
 import { gql } from "@apollo/client";
 
 export const POSTS_QUERY = gql`
-  query GetPosts($first: Int!, $order: PostsOrder) {
-    posts (first: $first, order: $order) {
+  query getPosts($cursor: String, $first: Int!, $order: PostsOrder) {
+    posts (after: $cursor, first: $first, order: $order) {
       edges {
+        cursor
         node {
           id
           name
@@ -13,6 +14,10 @@ export const POSTS_QUERY = gql`
             url
           }
         }
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
       }
     }
   }

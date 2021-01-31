@@ -6,11 +6,9 @@ export const PostCard = styled.div`
   background-color: #FFF;
   margin-bottom: 20px;
   padding: 10px 15px;
-  width: 85%;
   display: flex;
   align-items: center;
   position: relative;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 `;
 
 export const Image = styled.img`
