@@ -29,5 +29,6 @@ To run the unit tests and check coverage:
 - Add component documentation (like Docz, Storybook)
 - Add Upvote feature
 - Add Posts searching feature
+- Add Codecov integration
 - Add Sentry integration
 
