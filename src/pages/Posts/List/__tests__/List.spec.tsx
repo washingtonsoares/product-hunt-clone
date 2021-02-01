@@ -17,7 +17,7 @@ test('should render Posts page', async () => {
 
   await waitForElementToBeRemoved(() => screen.getByTitle('Loading...'));
 
-  expect(screen.getByText('Crello')).toBeInTheDocument()
+  expect(screen.getByText('Crello')).toBeInTheDocument();
   expect(screen.getByText('Add animation to your content easily.')).toBeInTheDocument();
   expect(screen.getByText('5398')).toBeInTheDocument();
   expect(screen.getByText('Sublime Text 3.0')).toBeInTheDocument();

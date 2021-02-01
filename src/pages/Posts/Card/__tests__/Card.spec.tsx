@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { Post } from 'core/types/Post';
-import PostCard from '..';
+import { BrowserRouter } from 'react-router-dom';
+import Card from '..';
 
 const postMock = {
   name: 'post 1',
@@ -12,10 +13,14 @@ const postMock = {
 } as Post;
 
 test('should render PostCard', () => {
-  render(<PostCard post={postMock} />);
+  render(
+    <BrowserRouter>
+      <Card post={postMock} />
+    </BrowserRouter>
+  );
 
   expect(screen.getByText(postMock.name)).toBeInTheDocument();
   expect(screen.getByText(postMock.tagline)).toBeInTheDocument();
   expect(screen.getByAltText(postMock.name)).toBeInTheDocument();
   expect(screen.getByText(postMock.votesCount)).toBeInTheDocument();
-})
+});

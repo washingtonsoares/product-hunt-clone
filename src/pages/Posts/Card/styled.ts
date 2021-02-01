@@ -1,14 +1,19 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
-export const PostCard = styled.div`
+export const PostCard = styled(Link)`
   border-radius: 15px;
   background-color: #FFF;
   margin-bottom: 20px;
   padding: 10px 15px;
   display: flex;
   align-items: center;
-  position: relative;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  }
 `;
 
 export const Image = styled.img`
@@ -36,19 +41,17 @@ export const Tagline = styled.p`
 `;
 
 export const IconArrowUp = styled(FontAwesomeIcon)`
-   font-size: 30px;
+  font-size: 30px;
 `;
 
 export const VotesCount = styled.strong``;
 
 export const UpVote = styled.div`
-  width: 50px;
-  height: 50px;
-  position: absolute;
+  width: 65px;
+  height: 55px;
   border: 1px solid #e4e5e6;
   background-color: #FFF;
   border-radius: 15px;
-  right: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;

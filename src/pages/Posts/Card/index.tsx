@@ -1,14 +1,24 @@
 import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { Post } from 'core/types/Post';
+import { useLocation } from 'react-router-dom';
 import * as Styled from './styled';
 
 interface Props {
   post: Post;
 }
 
-function PostCard({ post }: Props) {
+export default function Card({ post }: Props) {
+  const location = useLocation();
+
   return (
-    <Styled.PostCard>
+    <Styled.PostCard
+      to={{
+        pathname: `/post/${post.id}`,
+        state: {
+          previousPath: location.pathname
+        }
+      }}
+    >
       <Styled.Image
         src={post.thumbnail.url}
         alt={post.name}
@@ -30,5 +40,3 @@ function PostCard({ post }: Props) {
     </Styled.PostCard>
   );
 }
-
-export default PostCard;

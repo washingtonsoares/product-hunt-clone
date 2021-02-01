@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import * as Styled from './styled';
-import PostCard from "../Card";
-import { PostResponse } from 'core/types/Post';
+import Card from "../Card";
+import { PostsResponse } from 'core/types/Post';
 import PostLoader from '../Loader';
 import { POSTS_QUERY } from './queries';
 
@@ -14,7 +14,7 @@ interface Props {
 }
 
 export default function List({ order }: Props) {
-  const { data, fetchMore } = useQuery<PostResponse>(POSTS_QUERY, {
+  const { data, fetchMore } = useQuery<PostsResponse>(POSTS_QUERY, {
     variables: {
       first: DEFAULT_PAGE_SIZE,
       order
@@ -40,7 +40,7 @@ export default function List({ order }: Props) {
         loader={<PostLoader />}
       >
         {posts?.map(post => (
-          <PostCard post={post.node} key={post.node.id} />
+          <Card post={post.node} key={post.node.id} />
         ))}
       </Styled.InfiniteScroll>
     </Styled.ListWrapper>

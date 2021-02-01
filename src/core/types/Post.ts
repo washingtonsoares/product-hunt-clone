@@ -4,6 +4,13 @@ export interface Post {
   tagline: string;
   thumbnail: Thumbnail;
   votesCount: number;
+  description: string;
+  website: string;
+  media: Media[];
+}
+
+export interface Media {
+  url: string;
 }
 
 export interface Thumbnail {
@@ -26,6 +33,10 @@ export interface PostsData {
 }
 
 export interface PostResponse {
+  post: Post;
+}
+
+export interface PostsResponse {
   posts: PostsData;
 }
 

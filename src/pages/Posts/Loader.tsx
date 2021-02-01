@@ -1,6 +1,6 @@
 import ContentLoader from 'react-content-loader';
 
-export default function PostLoader() {
+export default function PostsListLoader() {
   return (
     <ContentLoader
       speed={0.5}
