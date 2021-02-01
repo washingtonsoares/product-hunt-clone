@@ -1,6 +1,6 @@
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import Posts from "./pages/Posts";
-import PostDetails from "./pages/PostDetails";
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Posts from './pages/Posts';
+import PostDetails from './pages/PostDetails';
 
 export default function Routes() {
   return (

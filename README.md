@@ -1,8 +1,6 @@
 <img src="https://www.bybrand.io/blog/wp-content/uploads/2018/11/product-hunt-logo-vertical-orange-1.png" height="200px" align="center"/>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cca3c45b-26c0-47e4-85ce-0fa7f91e3866/deploy-status)](https://app.netlify.com/sites/product-hunt-app/deploys)
- [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) 
-
 
 The goal is to build a web app to display [Product Hunt](https://www.producthunt.com/) most popular and most recent posts.
 
@@ -24,8 +22,9 @@ To run the unit tests and check coverage:
 ## Next steps
 
 - Add i18n
+- Add Cypress E2E tests
 - Add component documentation (like Docz, Storybook)
 - Add Upvote feature
+- Add Posts searching feature
 - Add Sentry integration
-- Add Cypress E2E tests
 
