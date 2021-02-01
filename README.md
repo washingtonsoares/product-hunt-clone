@@ -1,12 +1,14 @@
 <img src="https://www.bybrand.io/blog/wp-content/uploads/2018/11/product-hunt-logo-vertical-orange-1.png" height="200px" align="center"/>
 
-# Product Hunt App
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cca3c45b-26c0-47e4-85ce-0fa7f91e3866/deploy-status)](https://app.netlify.com/sites/product-hunt-app/deploys)
  [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) 
+
 
 The goal is to build a web app to display [Product Hunt](https://www.producthunt.com/) most popular and most recent posts.
 
-To build the layout, this design was used as inspiration:
+To fetch the data, the following Product Hunt public graphql API was used: https://api.producthunt.com/v2/docs
+
+To build the layout, the design below was used as inspiration (More details at: https://dribbble.com/shots/5650328/attachments/5650328-ProductHunt-Mobile-App-Redesign-Day-338-365-Project365?mode=media)
 
 ![image](https://user-images.githubusercontent.com/5726140/106479379-090bd680-6489-11eb-9df8-689a846a2643.png)
 
