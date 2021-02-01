@@ -29,13 +29,13 @@ export const Name = styled.h3`
   margin: 0;
   font-size: 16px;
   font-weight: normal;
-  color: #232c37;
+  color: ${({ theme }) => theme.ebonyGray};
   max-width: 80%;
 `;
 
 export const Tagline = styled.p`
   margin: 5px 0 0 0;
-  color: #85949b;
+  color: ${({ theme }) => theme.regentGray};
   font-size: 13px;
   max-width: 80%;
 `;
@@ -49,7 +49,7 @@ export const VotesCount = styled.strong``;
 export const UpVote = styled.div`
   width: 65px;
   height: 55px;
-  border: 1px solid #e4e5e6;
+  border: 1px solid ${({ theme }) => theme.ironGray};
   background-color: #FFF;
   border-radius: 15px;
   display: flex;

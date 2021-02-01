@@ -16,7 +16,7 @@ export const Avatar = styled.img`
 `;
 
 export const DateText = styled.span`
-  background-color: #f4f5f6;
+  background-color: ${({ theme }) => theme.porcelain};
   padding: 10px 20px;
   border-radius: 15px;
   font-size: 14px;

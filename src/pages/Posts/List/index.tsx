@@ -32,7 +32,7 @@ export default function List({ order }: Props) {
   const posts = data?.posts?.edges;
 
   return (
-    <Styled.ListWrapper>
+    <Styled.ListWrapper data-testid="posts-list">
       <Styled.InfiniteScroll
         dataLength={posts?.length ?? DEFAULT_DATA_LENGTH}
         next={fetchMoreData}

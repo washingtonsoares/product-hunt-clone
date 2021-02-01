@@ -2,7 +2,7 @@ import * as Styled from './styled';
 
 export default function Tabs() {
   return (
-    <Styled.Tabs>
+    <Styled.Tabs data-testid="tabs">
       <Styled.TabItem to="/" exact>
         Popular
       </Styled.TabItem>

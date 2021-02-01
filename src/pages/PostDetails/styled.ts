@@ -54,7 +54,7 @@ export const FeaturedName = styled.span`
 
 export const Description = styled.p`
   font-size: 18px;
-  color: #85949b;
+  color: ${({ theme }) => theme.regentGray};
 `;
 
 export const Footer = styled.footer`
@@ -65,7 +65,7 @@ export const Footer = styled.footer`
 export const ActionButton = styled.button`
   background-color: #FFF;
   flex: 1;
-  border: 2px solid #e2e5e7;
+  border: 2px solid ${({ theme }) => theme.ironGray};
   border-radius: 10px;
   padding: 15px;
   cursor: pointer;

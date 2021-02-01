@@ -7,7 +7,7 @@ dayjs.extend(advancedFormat);
 
 export default function Header() {
   return (
-    <Styled.Header>
+    <Styled.Header data-testid="header">
       <Styled.Avatar
         src="https://avatars.githubusercontent.com/u/5726140?s=200"
         alt="My avatar"
