@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { Post } from 'core/types/Post';
-import PostCard from '../';
+import PostCard from '..';
 
 const postMock = {
   name: 'post 1',

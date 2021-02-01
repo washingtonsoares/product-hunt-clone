@@ -1,7 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import Tabs from "./Tabs";
 import * as Styled from './styled';
-import PostsList from './PostList';
+import PostsList from './List';
 
 export default function Posts() {
   return (

@@ -24,7 +24,7 @@ const client = new ApolloClient({
   })
 });
 
-function App() {
+export default function App() {
   return (
     <ApolloProvider client={client}>
       <ThemeProvider theme={theme}>
@@ -36,5 +36,3 @@ function App() {
     </ApolloProvider>
   );
 }
-
-export default App;

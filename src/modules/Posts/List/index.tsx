@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
 import * as Styled from './styled';
-import PostCard from "../PostCard";
+import PostCard from "../Card";
 import { PostResponse } from 'core/types/Post';
 import PostLoader from '../Loader';
 import { POSTS_QUERY } from './queries';
@@ -13,7 +13,7 @@ interface Props {
   order: 'NEWEST' | 'VOTES'
 }
 
-export default function PostsList({ order }: Props) {
+export default function List({ order }: Props) {
   const { data, fetchMore } = useQuery<PostResponse>(POSTS_QUERY, {
     variables: {
       first: DEFAULT_PAGE_SIZE,
