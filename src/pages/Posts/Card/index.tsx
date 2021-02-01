@@ -1,3 +1,4 @@
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
 import { Post } from 'core/types/Post';
 import * as Styled from './styled';
 
@@ -23,8 +24,8 @@ function PostCard({ post }: Props) {
         </Styled.Tagline>
       </Styled.Info>
       <Styled.UpVote>
-        <Styled.IconArrowUp />
-        {post.votesCount}
+        <Styled.IconArrowUp icon={faCaretUp} />
+        <Styled.VotesCount>{post.votesCount}</Styled.VotesCount>
       </Styled.UpVote>
     </Styled.PostCard>
   );

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ReactComponent as IconArrowUpComponent } from 'core/assets/icons/icon-arrow-up.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const PostCard = styled.div`
   border-radius: 15px;
@@ -35,10 +35,11 @@ export const Tagline = styled.p`
   max-width: 80%;
 `;
 
-export const IconArrowUp = styled(IconArrowUpComponent)`
-  width: 25px;
-  height: 25px;
+export const IconArrowUp = styled(FontAwesomeIcon)`
+   font-size: 30px;
 `;
+
+export const VotesCount = styled.strong``;
 
 export const UpVote = styled.div`
   width: 50px;

@@ -32,7 +32,7 @@ export default function List({ order }: Props) {
   const posts = data?.posts?.edges;
 
   return (
-    <Styled.Content>
+    <Styled.ListWrapper>
       <Styled.InfiniteScroll
         dataLength={posts?.length ?? DEFAULT_DATA_LENGTH}
         next={fetchMoreData}
@@ -43,6 +43,6 @@ export default function List({ order }: Props) {
           <PostCard post={post.node} key={post.node.id} />
         ))}
       </Styled.InfiniteScroll>
-    </Styled.Content>
+    </Styled.ListWrapper>
   )
 }
