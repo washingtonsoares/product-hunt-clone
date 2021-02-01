@@ -64,6 +64,7 @@ export default function PostDetails() {
         <Styled.ActionButton
           as="a"
           href={post?.website}
+          target="_blank"
         >
           Get it
         </Styled.ActionButton>
