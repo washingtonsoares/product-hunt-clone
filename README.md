@@ -6,6 +6,10 @@
 
 The goal is to build a web app to display [Product Hunt](https://www.producthunt.com/) most popular and most recent posts.
 
+To build the layout, this design was used as inspiration:
+
+![image](https://user-images.githubusercontent.com/5726140/106479379-090bd680-6489-11eb-9df8-689a846a2643.png)
+
 ## setup
 
 - clone this repo.
