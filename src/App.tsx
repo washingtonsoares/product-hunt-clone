@@ -1,5 +1,5 @@
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-import { relayStylePagination } from "@apollo/client/utilities";
+import { relayStylePagination } from '@apollo/client/utilities';
 import { ThemeProvider } from 'styled-components';
 import { theme } from './core/theme';
 import GlobalStyles from './core/theme/global';
