@@ -1,4 +1,4 @@
-import { POST_DETAILS_QUERY } from "../queries";
+import { POST_DETAILS_QUERY } from '../queries';
 
 export const postDetailsMock = [
   {
@@ -36,4 +36,4 @@ export const postDetailsMock = [
       }
     }
   }
-]
+];

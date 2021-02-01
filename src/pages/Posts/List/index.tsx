@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
 import * as Styled from './styled';
-import Card from "../Card";
+import Card from '../Card';
 import { PostsResponse } from 'core/types/Post';
 import PostLoader from '../Loader';
 import { POSTS_QUERY } from './queries';

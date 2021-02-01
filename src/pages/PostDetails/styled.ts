@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const Wrapper = styled.div`
@@ -72,7 +72,7 @@ export const ActionButton = styled.button`
   font-weight: bold;
   text-align: center;
   font-size: 14px;
-  
+
   &:first-child {
     margin-right: 30px;
   }

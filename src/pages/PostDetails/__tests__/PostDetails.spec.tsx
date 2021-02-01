@@ -1,8 +1,8 @@
-import { render, screen, waitForElementToBeRemoved } from "@testing-library/react";
-import mockedReactRouterDom, { BrowserRouter } from "react-router-dom";
+import { render, screen, waitForElementToBeRemoved } from '@testing-library/react';
+import mockedReactRouterDom, { BrowserRouter } from 'react-router-dom';
 import { MockedProvider } from '@apollo/client/testing';
 import PostDetails from '../';
-import { postDetailsMock } from "./fixtures";
+import { postDetailsMock } from './fixtures';
 
 jest.mock('react-router-dom', () => ({
   ...jest.requireActual('react-router-dom') as typeof mockedReactRouterDom,
