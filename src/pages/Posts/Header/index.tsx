@@ -8,11 +8,14 @@ dayjs.extend(advancedFormat);
 export default function Header() {
   return (
     <Styled.Header>
-      <Styled.Avatar src="https://avatars.githubusercontent.com/u/5726140?s=200" />
+      <Styled.Avatar
+        src="https://avatars.githubusercontent.com/u/5726140?s=200"
+        alt="My avatar"
+      />
       <Styled.DateText>
         Today, {dayjs().format('Do MMM')}
       </Styled.DateText>
-      <Styled.Icon icon={faSearch} />
+      <Styled.Icon icon={faSearch} title="What are you looking for?" />
     </Styled.Header>
   );
 }
