@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/cca3c45b-26c0-47e4-85ce-0fa7f91e3866/deploy-status)](https://app.netlify.com/sites/product-hunt-app/deploys)
 
+https://product-hunt-app.netlify.app
+
 The goal is to build a web app to display [Product Hunt](https://www.producthunt.com/) most popular and most recent posts.
 
 To fetch the data, the following Product Hunt public graphql API was used: https://api.producthunt.com/v2/docs
