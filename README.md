@@ -1,4 +1,4 @@
-<img src="https://cdn-images-1.medium.com/max/1200/1*6gClJdrFEpPAqvT1Oo5gPQ.jpeg" height="200px" align="right"/>
+<img src="https://www.bybrand.io/blog/wp-content/uploads/2018/11/product-hunt-logo-vertical-orange-1.png" height="200px" align="right"/>
 
 # Immer
 
