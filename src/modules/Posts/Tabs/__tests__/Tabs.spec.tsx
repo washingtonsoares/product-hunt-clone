@@ -3,17 +3,14 @@ import userEvent from '@testing-library/user-event';
 import { BrowserRouter } from 'react-router-dom';
 import Tabs from '../';
 
-test('should render a default Tabs', () => {
+test('should render the default Tabs', () => {
   render(
     <BrowserRouter>
       <Tabs />
     </BrowserRouter>
   );
 
-  const popularTabElement = screen.getByText('Popular');
-
-  expect(popularTabElement).toBeInTheDocument();
-  expect(popularTabElement).toHaveClass('active');
+  expect(screen.getByText('Popular')).toBeInTheDocument();
   expect(screen.getByText('Newest')).toBeInTheDocument();
 });
 
@@ -32,5 +29,4 @@ test('should switch between tabs', () => {
 
   expect(newestTabElement).toHaveClass('active');
   expect(popularTabElement).not.toHaveClass('active');
-
 });

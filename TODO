@@ -1,0 +1,6 @@
+- Add eslint + prettier
+- add README.MD
+- add storybook
+- add i18n
+- Add Sentry
+- Add Cypress

@@ -7,6 +7,7 @@ import { POSTS_QUERY } from './queries';
 
 const DEFAULT_DATA_LENGTH = 0;
 const DEFAULT_HAS_NEXT = true;
+export const DEFAULT_PAGE_SIZE = 10;
 
 interface Props {
   order: 'NEWEST' | 'VOTES'
@@ -15,12 +16,10 @@ interface Props {
 export default function PostsList({ order }: Props) {
   const { data, fetchMore } = useQuery<PostResponse>(POSTS_QUERY, {
     variables: {
-      first: 10,
+      first: DEFAULT_PAGE_SIZE,
       order
     }
   });
-
-  const posts = data?.posts?.edges;
 
   const fetchMoreData = () => {
     fetchMore({
@@ -29,6 +28,8 @@ export default function PostsList({ order }: Props) {
       }
     })
   }
+
+  const posts = data?.posts?.edges;
 
   return (
     <Styled.Content>
