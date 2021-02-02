@@ -16,7 +16,7 @@ To build the layout, the design below was used as inspiration (More details at: 
 
 - clone this repo.
 - install the dependencies by running `yarn install`
-- Create a `.env` file at the root of the project with the `REACT_APP_ACCESS_TOKEN` env variable. Ex: `REACT_APP_ACCESS_TOKEN = YOUR_PRODUCT_HUNT_DEVELOPER_TOKEN` (if yout don't have a one, you can create at https://www.producthunt.com/v2/oauth/applications)
+- Create a `.env` file at the root of the project with the `REACT_APP_ACCESS_TOKEN` env variable. Ex: `REACT_APP_ACCESS_TOKEN = YOUR_PRODUCT_HUNT_DEVELOPER_TOKEN` (if yout don't have a one, login to https://www.producthunt.com and then you can create the token at https://www.producthunt.com/v2/oauth/applications)
 - run `yarn run start`.
 
 To run the unit tests and check coverage:
